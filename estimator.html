@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Estimator | Hamdani_Site</title>
+<meta name="description" content="Estimate building materials and cost from room length, width and height.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><div class="wrap">
+<a class="logo" href="index.html">Hamdani_Site</a>
+<nav>
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="estimator.html" class="on">Estimator</a>
+<a href="contact.html">Contact</a>
+</nav></div></header>
+<main><div class="wrap">
+<div class="page-title"><h1>Free estimator</h1>
+<p>Enter one room or building block in metres. Change the rates to match your market.</p></div>
+<form class="calc" id="calc">
+<div class="row">
+<label>Length (m)<input type="number" id="len" min="0" step="0.01" value="5" required></label>
+<label>Width (m)<input type="number" id="wid" min="0" step="0.01" value="4" required></label>
+<label>Height (m)<input type="number" id="hei" min="0" step="0.01" value="3" required></label>
+</div>
+<div class="row">
+<label>Labour rate (PKR per m²)<input type="number" id="lab" min="0" value="500"></label>
+<label>Material rate (PKR per m²)<input type="number" id="mat" min="0" value="1200"></label>
+</div>
+<button class="btn" type="submit">Calculate</button>
+</form>
+<div id="out" aria-live="polite"></div>
+<p class="note">These are rule-of-thumb figures for early planning. For a tender or loan, ask us for a detailed estimate.</p>
+</div></main>
+<footer><div class="wrap">© 2026 Hamdani_Site. All rights reserved. | its.awaishamdani@gmail.com | 923000000000</div></footer>
+<script src="js/main.js"></script>
+</body>
+</html>

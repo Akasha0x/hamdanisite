@@ -1,0 +1,33 @@
+:root{--ink:#17212b;--paper:#f5f7f6;--line:#c9cfcb;--tape:#e0a800;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,Segoe UI,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+h1,h2,h3{font-family:Georgia,serif;line-height:1.2}
+a{color:inherit}
+.wrap{max-width:1050px;margin:auto;padding:0 20px}
+header{background:var(--ink);color:var(--white)}
+header .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;padding-top:14px;padding-bottom:14px}
+.logo{font-family:Georgia,serif;font-size:1.3rem;text-decoration:none}
+nav a{margin-left:18px;text-decoration:none}
+nav a:hover,nav a.on{border-bottom:2px solid var(--tape)}
+.btn{display:inline-block;background:var(--tape);color:var(--ink);padding:11px 20px;border:0;border-radius:4px;font-weight:700;text-decoration:none;cursor:pointer;font-size:1rem}
+.btn:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--tape);outline-offset:2px}
+.hero{padding:80px 0;background-color:var(--ink);color:var(--white);background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);background-size:32px 32px}
+.hero h1{font-size:clamp(2rem,5vw,3.4rem);max-width:700px}
+.hero p{max-width:560px;margin:18px 0 26px;color:#d5dbd8}
+.dim{display:flex;align-items:center;gap:8px;max-width:700px;margin-bottom:14px;color:var(--tape);font-size:.9rem}
+.dim::before,.dim::after{content:"";flex:1;border-top:2px solid var(--tape)}
+section{padding:56px 0}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:24px}
+.box{background:var(--white);border:1px solid var(--line);border-left:5px solid var(--tape);padding:22px}
+.box h3{margin-bottom:8px}
+.page-title{padding:44px 0 10px}
+form,.calc{display:grid;gap:14px;max-width:560px;margin-top:20px}
+label{font-weight:600;display:grid;gap:4px}
+input,select,textarea{padding:10px;border:1px solid var(--line);border-radius:4px;font:inherit;background:var(--white)}
+.row{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px}
+table{border-collapse:collapse;width:100%;max-width:560px;margin-top:20px;background:var(--white)}
+td,th{border:1px solid var(--line);padding:9px 12px;text-align:left}
+tr.total td{font-weight:700;background:#fff6d6}
+.note{font-size:.9rem;color:#4b5a53;margin-top:12px;max-width:560px}
+footer{background:var(--ink);color:#d5dbd8;padding:26px 0;text-align:center;font-size:.9rem}
+@media(prefers-reduced-motion:no-preference){.btn{transition:transform .15s}.btn:hover{transform:translateY(-2px)}}
