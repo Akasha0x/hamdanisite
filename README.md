@@ -5,7 +5,7 @@ A multi-page website for a quantity surveying [business / project name], built w
 ## Pages
 | Page | Purpose |
 |---|---|
-| `index.html` | Home page: [one line] |
+| `index.html` | Home page|
 | `services.html` | Lists the quantity surveying services offered |
 | `estimator.html` | [e.g. calculates an estimated cost from user input] |
 | `contact.html` | Contact details and [contact form] |
