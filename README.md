@@ -16,9 +16,6 @@ HTML5 · CSS3 · JavaScript (`css/` and `js/` folders hold the styles and script
 ## How to run
 No installation is needed. Download or clone the repository and open `index.html` in a browser.
 
-## Screenshots
-![Home page](screenshots/home.png)
-
 ## Author
 **Akasha Abbasi**, Software Engineering student at MUST
 GitHub: [Akasha0x](https://github.com/Akasha0x)
